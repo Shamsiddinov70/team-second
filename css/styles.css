@@ -1,219 +1,158 @@
 /* barlow-regular - latin */
 @font-face {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/barlow-v11-latin-regular.woff2') format('woff2'),
-         url('../fonts/barlow-v11-latin-regular.woff') format('woff');
-  }
-  /* barlow-700 - latin */
-  @font-face {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local(''),
-         url('../fonts/barlow-v11-latin-700.woff2') format('woff2'),
-         url('../fonts/barlow-v11-latin-700.woff') format('woff');
-  }
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/barlow-v11-latin-regular.woff2") format("woff2"),
+    url("../fonts/barlow-v11-latin-regular.woff") format("woff");
+}
+
+/* barlow-700 - latin */
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("../fonts/barlow-v11-latin-700.woff2") format("woff2"),
+    url("../fonts/barlow-v11-latin-700.woff") format("woff");
+}
 
 /* fraunces-900 - latin */
 @font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url('../fonts/fraunces-v10-latin-900.eot');
-    src: local(''),
-         url('../fonts/fraunces-v10-latin-900.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'),
-         url('../fonts/fraunces-v10-latin-900.woff') format('woff'),
-         url('../fonts/fraunces-v10-latin-900.ttf') format('truetype'),
-         url('../fonts/fraunces-v10-latin-900.svg#Fraunces') format('svg');
-  }
-
-  body {
-     padding: 0;
-     margin: 0;
-     font-family:'Fraunces' ,  'Barlow' ,  'sans-serif';
-   }
-
-  html {
-     box-sizing: border-box;
-   }
-
-   *,
-   *::before,
-   *::after {
-     box-sizing: inherit;
-   }
-
-   img {
-     display: block;
-     max-width: 100%;
-   }
-
-   ul , ol , h1 , h2 , h3 , h4 , h5, h6 {
-     padding: 0;
-     margin: 0;
-     list-style-type: none;
-   }
-
-   a {
-     display: inline-block;
-     text-decoration: none;
-   }
-
- .container {
-     max-width: 1320px;
-     padding-left: 20px;
-     padding-right: 20px;
-     margin-left: auto;
-     margin-right: auto;
- }
-
-
- /* HEADER START  */
-.header {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding-top: 44px;
-     margin-bottom: 45px;
-     transition: 0.2s ease;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/fraunces-v10-latin-900.eot");
+  src: local(""),
+    url("../fonts/fraunces-v10-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/fraunces-v10-latin-900.woff2") format("woff2"),
+    url("../fonts/fraunces-v10-latin-900.woff") format("woff"),
+    url("../fonts/fraunces-v10-latin-900.ttf") format("truetype"),
+    url("../fonts/fraunces-v10-latin-900.svg#Fraunces") format("svg");
 }
 
-.header-logo-link:hover {
-     opacity: 0.7;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fraunces", "Barlow", "sans-serif";
 }
 
-.header-logo-link:active {
-     opacity: 0.5;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #2c343e;
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  transition: 0.3s ease;
+  margin-right: 102px;
+}
+
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.footer-logo:active {
+  opacity: 0.7;
+}
+
+.nav {
+  margin-right: auto;
 }
 
 .nav-list {
-     display: flex;
-     align-items: center;
+  display: flex;
 }
 
-.header-link {
-     font-weight: 700;
-     font-family: 'Barlow';
-     font-size: 12px;
-     line-height: 15px;
-     letter-spacing: 0.923077px;
-     text-transform: uppercase;
-     color: #83888F;
-     margin-left: 32px;
-     transition: 0.2s ease;
+.nav-item:not(:last-child) {
+  margin-right: 33px;
 }
 
-.header-link:hover {
-     color: pink;
+.nav-links {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+  transition: 0.3s ease;
 }
 
-.header-link:active {
-     opacity: 0.5;
+.nav-links:hover {
+  opacity: 0.7;
+  color: #dce1e7;
 }
-/* HEADER END  */
-
-
-/* INTRO START  */
-.intro {
-     background: #A2A2A2;
-     border-radius: 10px;
-     padding-top: 117px;
-     padding-bottom: 116px;
-     padding-left: 85px;
-     margin-bottom: 136px;
+.nav-links:active {
+  color: #dce1e7;
+  opacity: 0.4;
 }
 
-.intro-content-title {
-     font-weight: 900;
-     font-size: 72px;
-     line-height: 72px;
-     color: #FEFCF7;
-     width: 493px;
-     margin-bottom: 32px;
+.footer-socials {
+  display: flex;
 }
 
-.intro-content-text {
-     font-weight: 400;
-     font-family: 'Barlow';
-     font-size: 16px;
-     line-height: 26px;
-     color: #FEFCF7;
-     width: 445px;
-     margin-bottom: 56px;
+.footer-socials-link:not(:last-child) {
+  margin-right: 24px;
+  transition: 0.3s ease;
 }
 
-.intro-content-link {
-     font-weight: 900;
-     font-family: 'Fraunces';
-     font-size: 18px;
-     line-height: 25px;
-     text-align: center;
-     color: #FEFCF7;
-     background: #0E8784;
-     border-radius: 6px;
-     padding: 15px 31px 16px 31px;
-     transition: 0.5s;
+.footer-socials-link:hover {
+  opacity: 0.7;
+}
+.footer-socials-link:active {
+  opacity: 0.4;
 }
 
-.intro-content-link:hover {
-     background-color: pink;
-     color: #0E8784;
-}
-/* INTRO END  */
-
-
-/* COLLECTION START  */
-.collection {
-
-}
-
-.collection-cards {
-     display: flex;
-     justify-content: center;
-     margin-top: -55px;
-}
-
-.collection-bg-img {
-    background-image: url(../images/collection-bg-img.svg);
-    height: 196px;
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
-.collection-list {
-     padding: 0 15px;
-}
-
-.collection-item {
-     width: 255px;
-}
-
-.collection-img {
-     margin-bottom: 71px;
-}
-
-.collection-title {
-     font-family: 'Fraunces';
-     font-weight: 900;
-     font-size: 24px;
-     line-height: 32px;
-     text-align: center;
-     color: #333D4B;
-     margin-bottom: 24px;
-}
-
-.collection-text {
-     font-family: 'Barlow';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 26px;
-     text-align: center;
-     color: #333D4B;
-}
+/* FOOTER END */
