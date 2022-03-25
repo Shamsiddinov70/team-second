@@ -145,6 +145,7 @@ a {
 
 .footer-socials-link:not(:last-child) {
   margin-right: 24px;
+  transition: 0.3s ease;
 }
 
 .footer-socials-link:hover {
